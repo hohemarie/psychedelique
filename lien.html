@@ -1,0 +1,52 @@
+
+<html>
+<head>
+<title> Page contenant le lien vers openclassrooms </title>
+<meta charset="utf-8" />
+
+</head>
+<body>
+<a href="https://openclassrooms.com">OpenClassrooms</a>
+<p id="para">1,2,1,2 This is a test</p>
+<ul>
+<li><p>Fraises</p></li>
+<li><p>Framboises</p></li>
+<li><p>Cerises</p></li>
+</ul>
+<h1 id="premier">Ma journée</h1>
+<ol>
+<li><p>Je me lève</p></li>
+<li><p>Je mange et je bois.</p></li>
+</ol>
+<button class="button">Click Me</button>
+<h2 id="second">affichage du bouton javascript </h2>
+<button class="button" type="button" onclick="bg();changeColorPar('blue');changeColorHg('green');changeColorHm('green');changeFontSection('papyrus');changeFontHeaders('Comic Sans MS';">blue</button>
+<button type="button" onclick="bg()">set</button>
+<script>
+function changeColorPar(newcolor) {
+var element = document.getElementById('para');
+element.style.color = newcolor;
+}
+function changeColorHg(newcolor) {
+var element = document.getElementById('premier');
+element.style.color = newcolor;
+}
+function changeColorHm(newcolor) {
+var element = document.getElementById('second');
+element.style.color = newcolor;
+}
+function changeFontSection(newfont) {
+var element = document.getElementById('para');
+element.style.font = newfont;
+}
+
+function changeFontHeaders(newfont) {
+var element = document.getElementById('heading');
+element.style.font = newfont;
+}
+function bg() {
+document.body.style.backgroundColor="red";
+}
+</script>
+</body>
+</html>
