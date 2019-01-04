@@ -6,4 +6,12 @@
 	font-family : "papyrus";
 	src : url('papyrus.ttf') format('truetype");
 }
-
+h1,h2,h3,p
+{
+	/*argin auto;*/
+	margin: auto; 
+	text-align: justify;
+	justify-content:center;
+	display:flex;
+	width: 100px;
+}
